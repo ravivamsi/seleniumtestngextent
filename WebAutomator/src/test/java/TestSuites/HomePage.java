@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -76,7 +77,17 @@ public class HomePage extends base{
 		Assert.assertTrue(true);
 		test.log(LogStatus.PASS, "Assert Pass as condition is True");
 		}
-
+	
+	/*@Test
+	public void amazonWebpageTesting() throws InterruptedException{
+		test=extent.startTest("Amazon Webpage Testing");
+		
+		driver.get(prop.getProperty("amazonurl"));
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("mazda 6");
+		driver.wait(1000);
+		
+	}*/
+	
 	@Test
 	public void demoReportPass(){
 		test=extent.startTest("DemoReportPass");
