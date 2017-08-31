@@ -4,7 +4,7 @@
  <listeners>
      
         
-         <listener class-name="Academy.listeners"/>
+         <listener class-name="TestSuites.listeners"/>
          <listener class-name="resources.ExtentReporterNG"/>
          
 
@@ -12,23 +12,23 @@
 
   <test name="Validating User login">
     <classes>
-      <class name="Academy.HomePage"/>
+      <class name="TestSuites.HomePage"/>
           </classes>
       </test>
       
     <test name="Validating title in the Page">
          <classes>
-      <class name="Academy.validateTitle"/>
+      <class name="TestSuites.validateTitle"/>
        </classes>
       </test>
        <test name="App Testing">
          <classes>
-      <class name="Academy.AppTest"/>
+      <class name="TestSuites.AppTest"/>
        </classes>
       </test>
             <test name="Validating navigation Bar">
          <classes>
-      <class name="Academy.validateNavigationBar"/>
+      <class name="TestSuites.validateNavigationBar"/>
    </classes>
       </test>
    <!-- Test -->
