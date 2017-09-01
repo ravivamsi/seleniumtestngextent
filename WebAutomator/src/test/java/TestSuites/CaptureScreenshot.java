@@ -63,7 +63,6 @@ public class CaptureScreenshot extends base{
 	@Test
 	public void anotherTest() throws InterruptedException{
 		test = extentReports.startTest("ICJ Stage");
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		
 		/*if(webDriver.findElement(By.className("txtPassword")).isSelected()){

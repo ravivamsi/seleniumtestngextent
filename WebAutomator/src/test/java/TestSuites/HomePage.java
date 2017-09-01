@@ -20,14 +20,18 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import Configuration.PathConfiguration;
+import TestData.Credentials;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import resources.base;
 
 public class HomePage extends base{
 	
+	PathConfiguration pathConfig = new PathConfiguration();
+	Credentials credentials = new Credentials();
 	 public static Logger log =LogManager.getLogger(base.class.getName());
-	 String outputDirectory = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/";
+	 String outputDirectory = pathConfig.reportsDirectory;
 		/*List<XmlSuite> xmlSuites = null;
 		List<ISuite> suites = null;
 		reporter.generateReport(xmlSuites, suites, outputDirectory);*/
@@ -51,7 +55,7 @@ public class HomePage extends base{
 	 @BeforeTest
 	public void initialize() throws IOException
 	{
-		 extent.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
+		 extent.loadConfig(new File(pathConfig.exetentConfigFile)); 
 		 
 		 driver =initializeDriver();
 		 
@@ -127,20 +131,8 @@ public class HomePage extends base{
 	@DataProvider
 	public Object[][] getData()
 	{
-		// Row stands for how many different data types test should run
-		//coloumn stands for how many values per each test
 		
-		// Array size is 2
-		// 0,1
-		Object[][] data=new Object[2][3];
-		//0th row
-		data[0][0]="nonrestricteduser@qw.com";
-		data[0][1]="123456";
-		data[0][2]="Restrcited User";
-		//1st row
-		data[1][0]="restricteduser@qw.com";
-		data[1][1]="456788";
-		data[1][2]= "Non restricted user";
+		Object[][] data= credentials.getCredentials();
 		
 		return data;
 
