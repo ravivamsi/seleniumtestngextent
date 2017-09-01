@@ -3,14 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestSuites.CaptureScreenshot">
-        <methods>
-          <include name="captureScreenShot"/>
-          <include name="endReport"/>
-          <include name="init"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- TestSuites.CaptureScreenshot -->
       <class name="TestSuites.HomePage">
         <methods>
           <include name="getResult"/>

@@ -56,7 +56,7 @@ public class HomePage extends base{
 		 driver =initializeDriver();
 		 
 	}
-	@Test(dataProvider="getData")
+	/*@Test(dataProvider="getData")
 	public void basePageNavigation(String Username,String Password,String text) throws IOException
 	{
 
@@ -76,7 +76,7 @@ public class HomePage extends base{
 		lp.getLogin().click();
 		Assert.assertTrue(true);
 		test.log(LogStatus.PASS, "Assert Pass as condition is True");
-		}
+		}*/
 	
 	/*@Test
 	public void amazonWebpageTesting() throws InterruptedException{
