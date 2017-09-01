@@ -63,14 +63,6 @@ public class CaptureScreenshot extends base{
 	@Test
 	public void anotherTest() throws InterruptedException{
 		test = extentReports.startTest("ICJ Stage");
-		webDriver.get("https://fdstg.hilton.com/idp/startSSO.ping?PartnerSpId=https://contact-center--icjtest.cs30.my.salesforce.com/");
-		
-		webDriver.findElement(By.id("txtUserID")).sendKeys("nkumar3");
-		//webDriver.wait(timeout);
-		System.out.println("Username is set");
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		webDriver.findElement(By.id("txtPassword")).clear();
-		webDriver.findElement(By.id("txtPassword")).sendKeys("Hilton@77");
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		
