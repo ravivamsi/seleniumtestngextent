@@ -57,7 +57,7 @@ public class HomePage extends base{
 	{
 		 extent.loadConfig(new File(pathConfig.exetentConfigFile)); 
 		 
-		 driver =initializeDriver();
+//		 driver =initializeDriver();
 		 
 	}
 	/*@Test(dataProvider="getData")
@@ -92,7 +92,7 @@ public class HomePage extends base{
 		
 	}*/
 	
-	@Test
+/*	@Test
 	public void demoReportPass(){
 		test=extent.startTest("DemoReportPass");
 		Assert.assertTrue(true);
@@ -106,7 +106,7 @@ public class HomePage extends base{
 		test=extent.startTest("DemoReportFail");
 		Assert.assertTrue(false);
 		test.log(LogStatus.FAIL, "Assert Fail as condition is False");
-	}
+	}*/
 	
 	@AfterMethod
 	public void getResult(ITestResult result){
@@ -120,8 +120,8 @@ public class HomePage extends base{
 	public void teardown()
 	{
 		
-		driver.close();
-		driver=null;
+//		driver.close();
+//		driver=null;
 		
 		extent.flush();
 	        extent.close();
