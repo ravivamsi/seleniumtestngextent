@@ -45,15 +45,17 @@ public class VerifyLogout extends base{
 		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPVerifyLogoutReport.html");
 		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
 		 
-		webDriver =initializeDriver();
-		webDriver.manage().window().maximize();
+		
 	}
 
 
 	
 
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void verifyLogoutInformation() throws AWTException, IOException, InterruptedException{
+		webDriver =initializeDriver();
+		webDriver.manage().window().maximize();
+		
 		test = extentReports.startTest("TMTP Verify Username");
 		
 		webDriver.get("https://tmtp-stg.hilton.com/tmtp/entry.html");
@@ -120,7 +122,7 @@ public class VerifyLogout extends base{
 			test.log(LogStatus.PASS, "Verified the Logout Window Title"+test.addScreenCapture(logoutVerifyElementFailScreenshotPath));
 		
 		}
-		
+		webDriver.close();
 	}
 	
 	@AfterMethod
@@ -136,7 +138,7 @@ public class VerifyLogout extends base{
 	
 	@AfterTest
 	public void endReport(){
-			webDriver.close();
+//			webDriver.close();
 			extentReports.flush();
 			extentReports.close();
 	}

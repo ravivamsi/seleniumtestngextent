@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RemoveMember">
+      <class name="TestSuites.AddRemoveMember">
         <methods>
-          <include name="getResult"/>
-          <include name="tmtpRemoveFriend"/>
-          <include name="init"/>
           <include name="endReport"/>
+          <include name="verifyLobbyLoginGotoMyApplicationsAndTMTP"/>
+          <include name="init"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- RemoveMember -->
+      </class> <!-- TestSuites.AddRemoveMember -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

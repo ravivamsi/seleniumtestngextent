@@ -43,9 +43,7 @@ public class AddMember extends base{
 		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPAddMemberReport.html");
 		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
 		 
-		webDriver =initializeDriver();
-
-		webDriver.manage().window().maximize();
+		
 	
 	}
 
@@ -54,6 +52,10 @@ public class AddMember extends base{
 
 	@Test(enabled=false)
 	public void tmtpAddFriend() throws AWTException, IOException, InterruptedException{
+		
+		webDriver =initializeDriver();
+
+		webDriver.manage().window().maximize();
 		test = extentReports.startTest("TMTP Add Member");
 		
 		webDriver.get("https://tmtp-stg.hilton.com/tmtp/entry.html");
@@ -145,6 +147,8 @@ public class AddMember extends base{
 			test.log(LogStatus.FAIL, "Failed to verify the Window Title"+test.addScreenCapture(logoutFailScreenshotPath));		
 		}
 		
+		
+		webDriver.close();
 	}
 	
 	@AfterMethod
@@ -160,7 +164,7 @@ public class AddMember extends base{
 	
 	@AfterTest
 	public void endReport(){
-			webDriver.close();
+		//	webDriver.close();
 			extentReports.flush();
 			extentReports.close();
 	}

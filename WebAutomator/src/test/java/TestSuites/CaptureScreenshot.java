@@ -50,14 +50,17 @@ public class CaptureScreenshot extends base{
 		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPLoginReport.html");
 		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
 		 
-		webDriver =initializeDriver();
-
-		webDriver.manage().window().maximize();
+		
 	
 	}
 
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void tmtpSignIn() throws AWTException, IOException{
+		
+		webDriver =initializeDriver();
+
+		webDriver.manage().window().maximize();
+		
 		test = extentReports.startTest("TMTP Sign In");
 		
 		webDriver.get("https://tmtp-stg.hilton.com/tmtp/entry.html");
@@ -111,7 +114,7 @@ public class CaptureScreenshot extends base{
 			String logoutFailScreenshotPath = GetScreenShot.capture(webDriver, "screenshotForLogoutFail");
 			test.log(LogStatus.FAIL, "Failed to verify the Window Title"+test.addScreenCapture(logoutFailScreenshotPath));		
 		}
-		
+		webDriver.close();
 	}
 	
 
@@ -130,7 +133,7 @@ public class CaptureScreenshot extends base{
 	
 	@AfterTest
 	public void endReport(){
-			webDriver.close();
+			
 			extentReports.flush();
 			extentReports.close();
 	}
