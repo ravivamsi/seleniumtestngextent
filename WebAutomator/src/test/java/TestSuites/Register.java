@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -24,6 +25,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import Utilities.Anesthesia;
 import resources.base;
 
 /**
@@ -43,72 +45,75 @@ public class Register extends base{
 	
 	@BeforeTest
 	public void init() throws IOException{
-		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPRegisterSample.html");
+		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPRegister.html");
 		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
 		 
 //		webDriver =initializeDriver();
 	
 	}
 	
-	@Test(enabled=false)
-	public void captureScreenShot(){
-		test = extentReports.startTest("Capture Screenshot");
-		//webDriver = new FirefoxDriver();
-		webDriver.get("http://www.automationtesting.in");
-		String title = webDriver.getTitle();
-		Assert.assertEquals("Home - Automation Test", title);
-		test.log(LogStatus.PASS, "Test Passed as titles are equal");
-	}
+	
 	
 	@Test(enabled=false)
-	public void tmtpJoin(){
+	public void tmtpJoin() throws IOException{
+		
+	
+		webDriver =initializeDriver();
+
+		webDriver.manage().window().maximize();
+		WebDriverWait webDriverWait = new WebDriverWait(webDriver, 5);
+		Thread thread = new Thread();
+		
 		test = extentReports.startTest("TMTP Join");
 		
-		webDriver.get("https://secure3-stg.hilton.com/en/hh/customer/join/joinHHonors.htm");
+		webDriver.get("https://tmtp-stg.hilton.com/tmtp/entry.html");
+
+		// userId xpath .//*[@id='txtUserID']
+		WebElement userId = webDriver.findElement(By.id("txtUserID"));
+		userId.sendKeys("vamsiravi");
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		
-		WebElement firstName = webDriver.findElement(By.id("firstNameJoin"));
-		firstName.sendKeys("Vamsi");
+		//	password xpath .//*[@id='txtPassword']
+//		WebElement password = webDriver.findElement(By.cssSelector("#txtPassword"));
+//		password.click();
+//		password.sendKeys("July31-");
 		
-		WebElement lastname = webDriver.findElement(By.id("LastNameJoin"));
-		lastname.sendKeys("Ravi");
+		webDriver.findElement(By.cssSelector("#txtPassword")).click();
+		webDriver.findElement(By.cssSelector("#txtPassword")).sendKeys("Aarvy@@2789");
 		
-		WebElement phoneNumber = webDriver.findElement(By.id("phoneJoin"));
-		phoneNumber.sendKeys("8572056865");
+		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		String loginScreenshotPath = GetScreenShot.capture(webDriver, "screenshotForLoginLobby");
+		test.log(LogStatus.PASS, "Screenshot for the Lobby Login"+test.addScreenCapture(loginScreenshotPath));
 		
-		WebElement email = webDriver.findElement(By.id("emailJoin"));
-		email.sendKeys("ravivamsi@yahoo.com");
+		//	Lobby Login Button xpath .//*[@id='btnLogin']
+		WebElement lobbyLoginButton = webDriver.findElement(By.id("btnLogin"));
+		lobbyLoginButton.click();
 		
-		WebElement address = webDriver.findElement(By.id("street1"));
-		address.sendKeys("606 Stonecrossing Pl");
+		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		WebElement address2 = webDriver.findElement(By.id("street2"));
-		address2.sendKeys("Ravi");
+		Anesthesia.sleep(10);
 		
-		WebElement zip = webDriver.findElement(By.id("postalCode"));
-		zip.sendKeys("46227");
+		WebElement joinNow = webDriver.findElement(By.xpath(".//*[@id='joinButtonA']/span"));
 		
-		WebElement city = webDriver.findElement(By.id("LastNameJoin"));
-		city.sendKeys("Memphis");
+		joinNow.click();
 		
-		WebElement state = webDriver.findElement(By.xpath(".//*[@id='State']/optgroup[1]/option[43]/text()"));
-		Select selectState = new Select(state);
-		selectState.selectByVisibleText("Tennessee");
-		// or
-		state.click();
-		// or https://stackoverflow.com/questions/20138761/how-to-select-a-dropdown-value-in-selenium-webdriver-using-java
-		//	
+		Anesthesia.sleep(5);
 		
-		WebElement password = webDriver.findElement(By.id("LastNameJoin"));
-		lastname.sendKeys("Ravi");
+		WebElement firstNameTextBox = webDriver.findElement(By.id(""));
+		WebElement lastNameTextBox = webDriver.findElement(By.id(""));
+		WebElement cityTextBox = webDriver.findElement(By.id(""));
+		WebElement addressTextBox = webDriver.findElement(By.id(""));
+		WebElement address2TextBox = webDriver.findElement(By.id(""));
+		
+		WebElement zipTextBox = webDriver.findElement(By.id(""));
+		WebElement emailTextBox = webDriver.findElement(By.id(""));
+		WebElement passwordTextBox = webDriver.findElement(By.id(""));
+		WebElement confirmPasswordTextBox = webDriver.findElement(By.id(""));
 		
 		
-		WebElement confirmPassword = webDriver.findElement(By.id("LastNameJoin"));
-		lastname.sendKeys("Ravi");
 		
-		WebElement joinButton = webDriver.findElement(By.xpath(".//*[@id='enrollForm']/p[2]/button"));
-		lastname.sendKeys("Ravi");
+		webDriver.close();
 	}
 	
 	

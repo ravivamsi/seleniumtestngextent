@@ -54,7 +54,7 @@ public class FriendAndFamilyList extends base{
 
 	
 
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void verifyLobbyLoginGotoMyApplicationsAndTMTP() throws AWTException, IOException, InterruptedException{
 		
 		webDriver =initializeDriver();

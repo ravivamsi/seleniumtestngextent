@@ -22,6 +22,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import Configuration.PathConfiguration;
 import resources.base;
 
 /**
@@ -30,7 +31,7 @@ import resources.base;
  */
 public class LobbyLoginOnQPortfolio extends base{
 
-
+	PathConfiguration pathConfig = new PathConfiguration();
 
 	ExtentReports extentReports;
 	
@@ -43,8 +44,8 @@ public class LobbyLoginOnQPortfolio extends base{
 	
 	@BeforeTest
 	public void init() throws IOException{
-		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPVerifyLobbyUserInformationReport.html");
-		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
+		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"TMTPVerifyLobbyUserInformationReport.html");
+		extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 	
 	}
 
@@ -232,25 +233,4 @@ public class LobbyLoginOnQPortfolio extends base{
 	}
 	
 	
-	
-
-
-
-
-
-
-
-	
-	
-//	https://onqinsider.hilton.com/Insider/OnQLogin/Login.aspx
-	
-//	HRCCTest
-	
-//	July31-
-	
-//	UserInformation Verify xpath 	.//*[@id='zz4_Menu']
-	
-//	My Applications xpath 			.//*[@id='hlMenu']/li[4]/a/span[1]
-	
-//	Go Hilton Account				.//*[@id='myAppsAll']/div[28]/a
 }

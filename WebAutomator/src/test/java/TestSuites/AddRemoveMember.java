@@ -53,7 +53,7 @@ public class AddRemoveMember extends base{
 
 	
 
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void verifyAddAndRemoveMember() throws AWTException, IOException, InterruptedException{
 		
 		webDriver =initializeDriver();

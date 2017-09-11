@@ -18,6 +18,8 @@ public class PathConfiguration {
 	
 	public String baseDirectory = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/";
 			
+//	public String ieDriver = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/drivers/";
+	
 	public String errorConfiguration = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/ErrorScreenshot/";	
 	
 	public String reportsDirectory = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/";
