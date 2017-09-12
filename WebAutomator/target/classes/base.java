@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import Configuration.PathConfiguration;
 
@@ -33,19 +35,25 @@ System.out.println(browserName);
 
 if(browserName.equals("chrome"))
 {
-	 System.setProperty("webdriver.chrome.driver", pathConfig.chromeDriver);
+	System.setProperty("webdriver.chrome.driver", pathConfig.chromeDriver);
 	driver= new ChromeDriver();
+	driver.manage().window().maximize();
 		//execute in chrome driver
 	
-}
-else if (browserName.equals("firefox"))
-{
-	 driver= new FirefoxDriver();
+}else if (browserName.equals("firefox")){
+	
+	driver= new FirefoxDriver();
 	//firefox code
-}
-else if (browserName.equals("IE"))
-{
+	 driver.manage().window().maximize();
+	 
+	 
+}else if (browserName.equals("ie")){
 //	IE code
+//	System.setProperty("webdriver.ie.driver", pathConfig.ieDriver);
+//	driver = new InternetExplorerDriver();
+//	driver.manage().window().maximize();
+}else if(browserName.equals("headless")){
+	driver = new HtmlUnitDriver();
 }
 
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
