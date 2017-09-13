@@ -7,6 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import Utilities.Anesthesia;
+
 /**
  * @author vamsiravi
  *
@@ -25,26 +27,14 @@ public class Methods {
 		webElement.click();
 	}
 
-	
-	
 	// Use the Methods.highlightElement(webElement, driver);
-	public void highlighter(WebElement webElement, WebDriver driver){
+	public static void highlighter(WebElement webElement, WebDriver driver){
 
         for (int i = 0; i <2; i++) {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, "color: yellow; border: 2px solid yellow;");
-            
-            
-            try 
-            {
-            Thread.sleep(1000);
-            } 
-            catch (InterruptedException e) {
-
-            System.out.println(e.getMessage());
-            } 
-            
-            js.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, "");
+	            JavascriptExecutor js = (JavascriptExecutor) driver;
+	            js.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, "color: yellow; border: 2px solid red;");
+	            Anesthesia.sleep(1); 
+	            js.executeScript("arguments[0].setAttribute('style', arguments[1]);", webElement, "");
             }
 	}
 	
@@ -53,3 +43,5 @@ public class Methods {
 		return webElement.isDisplayed();
 	}
 }
+
+

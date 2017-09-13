@@ -51,9 +51,6 @@ public class FriendAndFamilyList extends base{
 	
 	}
 
-
-	
-
 	@Test(enabled=true)
 	public void verifyLobbyLoginGotoMyApplicationsAndTMTP() throws AWTException, IOException, InterruptedException{
 		
@@ -71,12 +68,6 @@ public class FriendAndFamilyList extends base{
 		userId.sendKeys("HRCCTest");
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		
-		//	password xpath .//*[@id='txtPassword']
-//		WebElement password = webDriver.findElement(By.cssSelector("#txtPassword"));
-//		password.click();
-//		password.sendKeys("July31-");
-		
 		webDriver.findElement(By.cssSelector("#txtPassword")).click();
 		webDriver.findElement(By.cssSelector("#txtPassword")).sendKeys("July31-");
 		
@@ -90,9 +81,7 @@ public class FriendAndFamilyList extends base{
 		
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		
 		// Verify the User Information
-		
 		WebElement userInformation = webDriver.findElement(By.xpath(".//*[@id='zz4_Menu']"));
 		String userInformationExpected = "Tom Steele";
 		String userInformationActual = userInformation.getText();
@@ -111,8 +100,7 @@ public class FriendAndFamilyList extends base{
 		WebElement myApplications = webDriver.findElement(By.xpath(".//*[@id='hlMenu']/li[4]/a/span[1]"));
 		myApplications.click();
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		
+
 		WebElement tmtpLink = webDriver.findElement(By.xpath(".//*[@id='myAppsAll']/div[28]/a"));
 		tmtpLink.click();
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
@@ -133,25 +121,21 @@ public class FriendAndFamilyList extends base{
 		WebElement friendLastName = webDriver.findElement(By.id("ffLastNameInput"));
 		WebElement friendHHonors = webDriver.findElement(By.id("ffHHonorsInput"));
 		WebElement friendAdd = webDriver.findElement(By.linkText("Add"));
-//		WebElement friendAddXpath = webDriver.findElement(By.xpath(".//*[@id='addFFLink']"));
-		
 
-		/*// 1st Member
-		friendFirstName.sendKeys("MANOO");
+//		1st Member
+		friendFirstName.sendKeys("Vamsi");
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		friendLastName.sendKeys("KUMAA");
+		friendLastName.sendKeys("Ravi");
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
-		friendHHonors.sendKeys("001341833");
+		friendHHonors.sendKeys("751317424");
 		
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		friendAdd.click();
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		*/
-		
+		webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Anesthesia.sleep(5);
 		
 		// 2nd Member
 		/*Vamsi
@@ -346,22 +330,6 @@ public class FriendAndFamilyList extends base{
 		webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ffFirstNameInput")));
 		
 		Anesthesia.sleep(5);
-		
-//		1st Member
-		friendFirstName.sendKeys("Vamsi");
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		friendLastName.sendKeys("Ravi");
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		friendHHonors.sendKeys("751317424");
-		
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		friendAdd.click();
-		webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Anesthesia.sleep(5);
-		
 		
 		String verifyAddFriendsFamilyListScreenshotPath = GetScreenShot.capture(webDriver, "verifyAddFriendsFamilyListScreenshotPath");
 		

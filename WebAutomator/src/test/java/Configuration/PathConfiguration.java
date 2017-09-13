@@ -9,22 +9,41 @@ package Configuration;
  */
 public class PathConfiguration {
 
-	
-	public String dataProprties = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/src/main/java/resources/data.properties";
-	
-	public String chromeDriver	= "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/drivers/chromedriver";
-	
-	public  String geckoDriver = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/drivers/geckodriver";
-	
+	// Change to forward slash for MAC or Linux , Change to backward slash for Windows Based as in the above	
+	// MAC or Linux 
 	public String baseDirectory = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/";
-			
-//	public String ieDriver = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/drivers/";
+ 
+	public String dataProprties = baseDirectory+"src/main/java/resources/data.properties";
 	
-	public String errorConfiguration = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/ErrorScreenshot/";	
+	public String chromeDriver	= baseDirectory+"drivers/chromedriver";
 	
-	public String reportsDirectory = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/";
+	public  String geckoDriver = baseDirectory+"drivers/geckodriver";
 	
-	public String exetentConfigFile = "/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config";
+	public String errorConfiguration = baseDirectory+"ErrorScreenshot/";	
+	
+	public String reportsDirectory = baseDirectory+"reports/";
+	
+	// Windows - Comment the Above paths and uncomment the below paths
+	
+	/*
+	 * 
+		public String baseDirectory = "C:\\git\\WebAutomator\\";
+	 
+		public String dataProprties = baseDirectory+"src\\main\\java\\resources\\data.properties";
+		
+		public String chromeDriver	= baseDirectory+"drivers\\chromedriver";
+		
+		public  String geckoDriver = baseDirectory+"drivers\\geckodriver";
+		
+		public String errorConfiguration = baseDirectory+"ErrorScreenshot\\";	
+		
+		public String reportsDirectory = baseDirectory+"reports\\";
+		
+		*
+		*/
+	
+	// Config File for the extent is the same for both Windows and Linux.
+	public String exetentConfigFile = baseDirectory+"extent.config";
 
 	public String getDataProprties() {
 		return dataProprties;
@@ -81,8 +100,5 @@ public class PathConfiguration {
 	public void setExetentConfigFile(String exetentConfigFile) {
 		this.exetentConfigFile = exetentConfigFile;
 	}
-
-
-
 
 }

@@ -43,7 +43,7 @@ public class VerifyElements extends base{
 	@BeforeTest
 	public void init() throws IOException{
 		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPverifyUserInformationReport.html");
-		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
+//		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
 		 
 		
 	

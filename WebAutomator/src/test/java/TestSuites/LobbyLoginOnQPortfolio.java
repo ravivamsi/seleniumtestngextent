@@ -45,7 +45,7 @@ public class LobbyLoginOnQPortfolio extends base{
 	@BeforeTest
 	public void init() throws IOException{
 		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"TMTPVerifyLobbyUserInformationReport.html");
-		extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
+//		extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 	
 	}
 
