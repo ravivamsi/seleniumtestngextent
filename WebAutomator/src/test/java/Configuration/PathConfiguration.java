@@ -17,6 +17,8 @@ public class PathConfiguration {
 	
 	public String chromeDriver	= baseDirectory+"drivers/chromedriver";
 	
+	public String phanthomDriver = baseDirectory+"drivers/phantomjs";
+	
 	public  String geckoDriver = baseDirectory+"drivers/geckodriver";
 	
 	public String errorConfiguration = baseDirectory+"ErrorScreenshot/";	
@@ -99,6 +101,14 @@ public class PathConfiguration {
 
 	public void setExetentConfigFile(String exetentConfigFile) {
 		this.exetentConfigFile = exetentConfigFile;
+	}
+
+	public String getPhanthomDriver() {
+		return phanthomDriver;
+	}
+
+	public void setPhanthomDriver(String phanthomDriver) {
+		this.phanthomDriver = phanthomDriver;
 	}
 
 }

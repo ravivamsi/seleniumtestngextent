@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import Configuration.PathConfiguration;
 
@@ -53,7 +54,9 @@ if(browserName.equals("chrome"))
 //	driver = new InternetExplorerDriver();
 //	driver.manage().window().maximize();
 }else if(browserName.equals("headless")){
-	driver = new HtmlUnitDriver();
+	// Initialize the Headless Browser
+	System.setProperty("phantomjs.binary.path", pathConfig.getPhanthomDriver());
+	driver = new PhantomJSDriver();
 }
 
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

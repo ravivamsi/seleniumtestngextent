@@ -55,7 +55,7 @@ public class ICJQuickSearch extends base{
 
 	
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void icjApplicationLoginAndVerifyQuickSearch() throws AWTException, IOException, InterruptedException{
 		
 		webDriver =initializeDriver();
@@ -182,7 +182,8 @@ public class ICJQuickSearch extends base{
 			String searchButtonInQuickSearchScreenshotPath = GetScreenShot.capture(webDriver, "searchButtonInQuickSearchScreenshotPath");
 			test.log(LogStatus.PASS, "The QuickSearch Search Guest is not verified"+test.addScreenCapture(searchButtonInQuickSearchScreenshotPath));
 		}
-*/		
+*/
+		
 		icjApplicationRepository.getUserNavigationArea(webDriver).click();
 		Anesthesia.sleep(1);
 		
