@@ -46,8 +46,13 @@ public class HomePage extends base{
 	 
 	 
 	 String dateString = dateStringConverter();
-		ExtentReports extent= new ExtentReports(outputDirectory + File.separator + dateString +"HomePageTest.html", true);
-		ExtentTest test;
+	 
+// To get the date functions added to the Test if needed	 
+//		ExtentReports extent= new ExtentReports(outputDirectory + File.separator + dateString +"HomePageTest.html", true);
+	
+	 
+		ExtentReports extent= new ExtentReports(outputDirectory +"HomePageTest.html", true);
+	 ExtentTest test;
 	 
 	 
 	 
