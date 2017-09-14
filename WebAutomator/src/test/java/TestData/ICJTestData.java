@@ -24,6 +24,11 @@ public class ICJTestData {
 	
 	public String hHonorsNumber = "405654312";
 	
+	/*
+	 * getters and setters
+	 * 
+	 */
+	
 	public String getIcjstageurl() {
 		return icjstageurl;
 	}

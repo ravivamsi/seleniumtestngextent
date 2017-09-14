@@ -21,6 +21,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import Configuration.PathConfiguration;
 import resources.base;
 
 /**
@@ -29,7 +30,7 @@ import resources.base;
  */
 public class VerifyLogout extends base{
 
-
+	PathConfiguration pathConfig = new PathConfiguration();
 
 	ExtentReports extentReports;
 	
@@ -42,7 +43,7 @@ public class VerifyLogout extends base{
 	
 	@BeforeTest
 	public void init() throws IOException{
-		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPVerifyLogoutReport.html");
+		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"TMTPVerifyLogoutReport.html");
 //		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
 		 
 		
