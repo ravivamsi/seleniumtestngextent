@@ -24,6 +24,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import Configuration.PathConfiguration;
 import Utilities.Anesthesia;
 import resources.base;
 
@@ -34,6 +35,7 @@ import resources.base;
 public class FriendAndFamilyList extends base{
 
 
+	PathConfiguration pathConfig = new PathConfiguration();
 
 	ExtentReports extentReports;
 	
@@ -46,9 +48,9 @@ public class FriendAndFamilyList extends base{
 	
 	@BeforeTest
 	public void init() throws IOException{
-		extentReports = new ExtentReports("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/reports/TMTPFriendAndFamilyListReport.html");
-		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
-	
+		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"TMTPFriendAndFamilyListReport.html");
+//		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
+
 	}
 
 	@Test(enabled=false)
