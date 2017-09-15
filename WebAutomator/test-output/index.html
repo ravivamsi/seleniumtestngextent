@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuites.HeadlessBrowser" hash-for-method="testHeadlessBrowser">testHeadlessBrowser</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuites.ICJQuickSearch" hash-for-method="icjApplicationLoginAndVerifyQuickSearch">icjApplicationLoginAndVerifyQuickSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestSuites.HeadlessBrowser</span>
+              <span class="class-name">TestSuites.ICJQuickSearch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testHeadlessBrowser">
-                  </a> <!-- testHeadlessBrowser -->
-                  <span class="method-name">testHeadlessBrowser</span>
+                  <a name="icjApplicationLoginAndVerifyQuickSearch">
+                  </a> <!-- icjApplicationLoginAndVerifyQuickSearch -->
+                  <span class="method-name">icjApplicationLoginAndVerifyQuickSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/c2/1cs59_ks15q_jmbjt_1c325m0000gn/T/testng-eclipse-430407495/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/c2/1cs59_ks15q_jmbjt_1c325m0000gn/T/testng-eclipse-709107364/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -164,12 +164,14 @@
       &lt;class name=&quot;TestSuites.Register&quot;/&gt;
       &lt;class name=&quot;TestSuites.HomePage&quot;/&gt;
       &lt;class name=&quot;Utilities.Anesthesia&quot;/&gt;
+      &lt;class name=&quot;Utilities.JavaScriptClicker&quot;/&gt;
       &lt;class name=&quot;TestSuites.FriendAndFamilyList&quot;/&gt;
       &lt;class name=&quot;Utilities.PageUtility&quot;/&gt;
       &lt;class name=&quot;WebObjects.TMTPLobby&quot;/&gt;
       &lt;class name=&quot;TestSuites.VerifyElements&quot;/&gt;
       &lt;class name=&quot;TestSuites.AppTest&quot;/&gt;
       &lt;class name=&quot;TestSuites.HeadlessBrowser&quot;/&gt;
+      &lt;class name=&quot;Utilities.MouseHover&quot;/&gt;
       &lt;class name=&quot;resources.base&quot;/&gt;
       &lt;class name=&quot;TestSuites.AddRemoveMember&quot;/&gt;
       &lt;class name=&quot;TestSuites.GetScreenShot&quot;/&gt;
@@ -179,6 +181,7 @@
       &lt;class name=&quot;TestSuites.VerifyLogout&quot;/&gt;
       &lt;class name=&quot;TestSuites.validateNavigationBar&quot;/&gt;
       &lt;class name=&quot;TestSuites.AddMember&quot;/&gt;
+      &lt;class name=&quot;Utilities.DropDownSelector&quot;/&gt;
       &lt;class name=&quot;TestSuites.CaptureScreenshot&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -193,7 +196,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (36 classes)</span>
+                <span class="test-name">Default test (39 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,14 +224,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testHeadlessBrowser')
-data.setCell(0, 2, 'TestSuites.HeadlessBrowser')
-data.setCell(0, 3, 38642);
+data.setCell(0, 1, 'icjApplicationLoginAndVerifyQuickSearch')
+data.setCell(0, 2, 'TestSuites.ICJQuickSearch')
+data.setCell(0, 3, 58482);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -254,6 +257,34 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.RemoveMember</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tmtpRemoveFriend</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.CaptureScreenshot</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tmtpSignIn</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.AddMember</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tmtpAddFriend</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.VerifyLogout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLogoutInformation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">TestSuites.VerifyElements</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyUserInformation</span>
@@ -268,27 +299,6 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.RemoveMember</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tmtpRemoveFriend</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.FriendAndFamilyList</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyLobbyLoginGotoMyApplicationsAndTMTP</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.AddMember</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tmtpAddFriend</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">TestSuites.LobbyLoginOnQPortfolio</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyLobbyLoginGotoMyApplicationsAndTMTP</span>
@@ -296,23 +306,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.VerifyLogout</span>
+              <span class="ignored-class-name">TestSuites.HeadlessBrowser</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyLogoutInformation</span>
+                <span class="ignored-method-name">testHeadlessBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.ICJQuickSearch</span>
+              <span class="ignored-class-name">TestSuites.FriendAndFamilyList</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">icjApplicationLoginAndVerifyQuickSearch</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.CaptureScreenshot</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tmtpSignIn</span>
+                <span class="ignored-method-name">verifyLobbyLoginGotoMyApplicationsAndTMTP</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -334,172 +337,172 @@ return data;
               <div class="chronological-class-name">TestSuites.AddRemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">5014 ms</span>
+                <span class="method-start">5007 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.CaptureScreenshot</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">10023 ms</span>
+                <span class="method-start">10015 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.FriendAndFamilyList</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">15034 ms</span>
+                <span class="method-start">15021 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HeadlessBrowser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">20046 ms</span>
+                <span class="method-start">20029 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">25054 ms</span>
+                <span class="method-start">25039 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.ICJQuickSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">25055 ms</span>
+                <span class="method-start">25040 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.LobbyLoginOnQPortfolio</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">30063 ms</span>
+                <span class="method-start">30047 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.Register</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">35069 ms</span>
+                <span class="method-start">35052 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.RemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">40076 ms</span>
+                <span class="method-start">40059 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.VerifyElements</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">45085 ms</span>
+                <span class="method-start">45067 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.VerifyLogout</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">50089 ms</span>
+                <span class="method-start">50072 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">TestSuites.HeadlessBrowser</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestSuites.ICJQuickSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testHeadlessBrowser</span>
-                <span class="method-start">55106 ms</span>
+                <span class="method-name">icjApplicationLoginAndVerifyQuickSearch</span>
+                <span class="method-start">55088 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=testHeadlessBrowser status=SUCCESS method=HeadlessBrowser.testHeadlessBrowser()[pri...)</span>
-                <span class="method-start">93749 ms</span>
+                <span class="method-name">getResult([TestResult name=icjApplicationLoginAndVerifyQuickSearch status=SUCCESS method=ICJQuickSearch.icjApp...)</span>
+                <span class="method-start">113571 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.AddMember</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">93752 ms</span>
+                <span class="method-start">113575 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.AddRemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">93945 ms</span>
+                <span class="method-start">113773 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.CaptureScreenshot</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">93985 ms</span>
+                <span class="method-start">113809 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.FriendAndFamilyList</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94025 ms</span>
+                <span class="method-start">113846 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HeadlessBrowser</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94060 ms</span>
+                <span class="method-start">113883 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">94109 ms</span>
+                <span class="method-start">113922 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.ICJQuickSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94141 ms</span>
+                <span class="method-start">113953 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.LobbyLoginOnQPortfolio</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94180 ms</span>
+                <span class="method-start">113994 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.Register</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94214 ms</span>
+                <span class="method-start">114027 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.RemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94244 ms</span>
+                <span class="method-start">114061 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.VerifyElements</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94278 ms</span>
+                <span class="method-start">114094 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.VerifyLogout</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">94306 ms</span>
+                <span class="method-start">114132 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -18,6 +18,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Configuration.PathConfiguration;
+import Utilities.GetScreenShot;
 import resources.base;
 
 /**

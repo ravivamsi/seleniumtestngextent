@@ -2,125 +2,125 @@
 <testng-results skipped="0" failed="0" ignored="10" total="11" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="94335" started-at="2017-09-14T18:44:36Z" finished-at="2017-09-14T18:46:10Z">
+  <suite name="Default suite" duration-ms="114167" started-at="2017-09-15T13:27:15Z" finished-at="2017-09-15T13:29:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="94335" started-at="2017-09-14T18:44:36Z" finished-at="2017-09-14T18:46:10Z">
+    <test name="Default test" duration-ms="114167" started-at="2017-09-15T13:27:15Z" finished-at="2017-09-15T13:29:09Z">
       <class name="TestSuites.AddMember">
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.AddMember@26f143ed]" name="init" is-config="true" duration-ms="5014" started-at="2017-09-14T13:44:36Z" finished-at="2017-09-14T13:44:41Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.AddMember@1bd39d3c]" name="init" is-config="true" duration-ms="5007" started-at="2017-09-15T08:27:15Z" finished-at="2017-09-15T08:27:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.AddRemoveMember@7bfc3126]" name="init" is-config="true" duration-ms="5009" started-at="2017-09-14T13:44:41Z" finished-at="2017-09-14T13:44:46Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.AddRemoveMember@341814d3]" name="init" is-config="true" duration-ms="5008" started-at="2017-09-15T08:27:20Z" finished-at="2017-09-15T08:27:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.CaptureScreenshot@3c1e3314]" name="init" is-config="true" duration-ms="5011" started-at="2017-09-14T13:44:46Z" finished-at="2017-09-14T13:44:51Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.CaptureScreenshot@6f19ac19]" name="init" is-config="true" duration-ms="5006" started-at="2017-09-15T08:27:25Z" finished-at="2017-09-15T08:27:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.FriendAndFamilyList@7dd712e8]" name="init" is-config="true" duration-ms="5012" started-at="2017-09-14T13:44:51Z" finished-at="2017-09-14T13:44:56Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.FriendAndFamilyList@56c4278e]" name="init" is-config="true" duration-ms="5008" started-at="2017-09-15T08:27:30Z" finished-at="2017-09-15T08:27:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.HeadlessBrowser@22ee2d0]" name="init" is-config="true" duration-ms="5008" started-at="2017-09-14T13:44:56Z" finished-at="2017-09-14T13:45:01Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.HeadlessBrowser@3d246ea3]" name="init" is-config="true" duration-ms="5010" started-at="2017-09-15T08:27:35Z" finished-at="2017-09-15T08:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:TestSuites.HomePage@10ad20cb]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-14T13:45:01Z" finished-at="2017-09-14T13:45:01Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestSuites.HomePage@20f5281c]" name="initialize" is-config="true" duration-ms="1" started-at="2017-09-15T08:27:40Z" finished-at="2017-09-15T08:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.ICJQuickSearch@70f43b45]" name="init" is-config="true" duration-ms="5008" started-at="2017-09-14T13:45:01Z" finished-at="2017-09-14T13:45:06Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.ICJQuickSearch@5b67bb7e]" name="init" is-config="true" duration-ms="5007" started-at="2017-09-15T08:27:40Z" finished-at="2017-09-15T08:27:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.LobbyLoginOnQPortfolio@3e792ce3]" name="init" is-config="true" duration-ms="5006" started-at="2017-09-14T13:45:06Z" finished-at="2017-09-14T13:45:11Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.LobbyLoginOnQPortfolio@4397ad89]" name="init" is-config="true" duration-ms="5005" started-at="2017-09-15T08:27:45Z" finished-at="2017-09-15T08:27:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.Register@26d10f2e]" name="init" is-config="true" duration-ms="5007" started-at="2017-09-14T13:45:11Z" finished-at="2017-09-14T13:45:16Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.Register@609db546]" name="init" is-config="true" duration-ms="5007" started-at="2017-09-15T08:27:50Z" finished-at="2017-09-15T08:27:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.RemoveMember@106faf11]" name="init" is-config="true" duration-ms="5009" started-at="2017-09-14T13:45:16Z" finished-at="2017-09-14T13:45:21Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.RemoveMember@7c214cc0]" name="init" is-config="true" duration-ms="5008" started-at="2017-09-15T08:27:55Z" finished-at="2017-09-15T08:28:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.VerifyElements@2c282004]" name="init" is-config="true" duration-ms="5004" started-at="2017-09-14T13:45:21Z" finished-at="2017-09-14T13:45:26Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.VerifyElements@301eda63]" name="init" is-config="true" duration-ms="5005" started-at="2017-09-15T08:28:00Z" finished-at="2017-09-15T08:28:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.VerifyLogout@53bc1328]" name="init" is-config="true" duration-ms="5006" started-at="2017-09-14T13:45:26Z" finished-at="2017-09-14T13:45:31Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:TestSuites.VerifyLogout@59cba5a]" name="init" is-config="true" duration-ms="5007" started-at="2017-09-15T08:28:05Z" finished-at="2017-09-15T08:28:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.AddMember@26f143ed]" name="endReport" is-config="true" duration-ms="193" started-at="2017-09-14T13:46:09Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.AddMember@1bd39d3c]" name="endReport" is-config="true" duration-ms="198" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.AddRemoveMember@7bfc3126]" name="endReport" is-config="true" duration-ms="40" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.AddRemoveMember@341814d3]" name="endReport" is-config="true" duration-ms="36" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.CaptureScreenshot@3c1e3314]" name="endReport" is-config="true" duration-ms="40" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.CaptureScreenshot@6f19ac19]" name="endReport" is-config="true" duration-ms="37" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.FriendAndFamilyList@7dd712e8]" name="endReport" is-config="true" duration-ms="35" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.FriendAndFamilyList@56c4278e]" name="endReport" is-config="true" duration-ms="37" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.HeadlessBrowser@22ee2d0]" name="endReport" is-config="true" duration-ms="49" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.HeadlessBrowser@3d246ea3]" name="endReport" is-config="true" duration-ms="39" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestSuites.HomePage@10ad20cb]" name="teardown" is-config="true" duration-ms="32" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestSuites.HomePage@20f5281c]" name="teardown" is-config="true" duration-ms="31" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.ICJQuickSearch@70f43b45]" name="endReport" is-config="true" duration-ms="39" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.ICJQuickSearch@5b67bb7e]" name="endReport" is-config="true" duration-ms="41" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.LobbyLoginOnQPortfolio@3e792ce3]" name="endReport" is-config="true" duration-ms="34" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.LobbyLoginOnQPortfolio@4397ad89]" name="endReport" is-config="true" duration-ms="33" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.Register@26d10f2e]" name="endReport" is-config="true" duration-ms="30" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.Register@609db546]" name="endReport" is-config="true" duration-ms="34" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.RemoveMember@106faf11]" name="endReport" is-config="true" duration-ms="34" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.RemoveMember@7c214cc0]" name="endReport" is-config="true" duration-ms="33" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.VerifyElements@2c282004]" name="endReport" is-config="true" duration-ms="28" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.VerifyElements@301eda63]" name="endReport" is-config="true" duration-ms="38" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.VerifyLogout@53bc1328]" name="endReport" is-config="true" duration-ms="26" started-at="2017-09-14T13:46:10Z" finished-at="2017-09-14T13:46:10Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:TestSuites.VerifyLogout@59cba5a]" name="endReport" is-config="true" duration-ms="32" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- TestSuites.AddMember -->
-      <class name="TestSuites.HeadlessBrowser">
-        <test-method status="PASS" signature="testHeadlessBrowser()[pri:0, instance:TestSuites.HeadlessBrowser@22ee2d0]" name="testHeadlessBrowser" duration-ms="38642" started-at="2017-09-14T13:45:31Z" finished-at="2017-09-14T13:46:09Z">
+      <class name="TestSuites.ICJQuickSearch">
+        <test-method status="PASS" signature="icjApplicationLoginAndVerifyQuickSearch()[pri:0, instance:TestSuites.ICJQuickSearch@5b67bb7e]" name="icjApplicationLoginAndVerifyQuickSearch" duration-ms="58482" started-at="2017-09-15T08:28:10Z" finished-at="2017-09-15T08:29:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHeadlessBrowser -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestSuites.HeadlessBrowser@22ee2d0]" name="getResult" is-config="true" duration-ms="2" started-at="2017-09-14T13:46:09Z" finished-at="2017-09-14T13:46:09Z">
+        </test-method> <!-- icjApplicationLoginAndVerifyQuickSearch -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestSuites.ICJQuickSearch@5b67bb7e]" name="getResult" is-config="true" duration-ms="3" started-at="2017-09-15T08:29:09Z" finished-at="2017-09-15T08:29:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testHeadlessBrowser status=SUCCESS method=HeadlessBrowser.testHeadlessBrowser()[pri:0, instance:TestSuites.HeadlessBrowser@22ee2d0] output={null}]]]>
+                <![CDATA[[TestResult name=icjApplicationLoginAndVerifyQuickSearch status=SUCCESS method=ICJQuickSearch.icjApplicationLoginAndVerifyQuickSearch()[pri:0, instance:TestSuites.ICJQuickSearch@5b67bb7e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- TestSuites.HeadlessBrowser -->
+      </class> <!-- TestSuites.ICJQuickSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

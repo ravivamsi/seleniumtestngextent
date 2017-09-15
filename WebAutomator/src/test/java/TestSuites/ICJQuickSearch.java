@@ -27,6 +27,7 @@ import ObjectRepository.ICJApplication;
 import TestData.ICJTestData;
 import Utilities.Anesthesia;
 import Utilities.Frame;
+import Utilities.GetScreenShot;
 import Utilities.Highlighter;
 import resources.base;
 
@@ -52,10 +53,9 @@ public class ICJQuickSearch extends base{
 		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"ICJQuickSearchReport.html");
 		extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 	}
-
 	
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void icjApplicationLoginAndVerifyQuickSearch() throws AWTException, IOException, InterruptedException{
 		
 		webDriver =initializeDriver();
@@ -64,6 +64,7 @@ public class ICJQuickSearch extends base{
 		
 		test = extentReports.startTest("ICJ Quick Search");
 		
+		//Get URL 
 		webDriver.get(testData.getIcjstageurl());
 		
 		Anesthesia.sleep(5);
@@ -83,7 +84,7 @@ public class ICJQuickSearch extends base{
 		
 		// Screenshot of the Lobby Login
 		String lobbyLoginPageScreenshotPath = GetScreenShot.capture(webDriver, "lobbyLoginPageScreenshotPath");
-		test.log(LogStatus.PASS, "The Lobby Login is successful"+test.addScreenCapture(lobbyLoginPageScreenshotPath));
+		test.log(LogStatus.PASS, "The Lobby Login has ID and Password"+test.addScreenCapture(lobbyLoginPageScreenshotPath));
 		
 		
 		// SignIn Button
@@ -126,12 +127,29 @@ public class ICJQuickSearch extends base{
 		}
 		
 		// Click Quick Search 
+		Highlighter.verifyElement(icjApplicationRepository.getQuickSearchElement(webDriver),webDriver);
 		icjApplicationRepository.getQuickSearchElement(webDriver).click();
 		Anesthesia.sleep(1);
 		
 		// Switch to default frame
 		Frame.switchToDefaultFrame(webDriver);
 		Anesthesia.sleep(2);
+
+		
+		String quickSearchVerifyPopupScreenShotPath = GetScreenShot.capture(webDriver, "quickSearchVerifyPopupScreenShotPath");
+		test.log(LogStatus.PASS, "The QuickSearch is verified"+test.addScreenCapture(quickSearchVerifyPopupScreenShotPath));
+		
+		// To Do 
+		/*if(icjApplicationRepository.getSearchInQuickSearch(webDriver).isDisplayed()){
+			String hhonorsElementInQuickSearchScreenshot = GetScreenShot.capture(webDriver, "hhonorsElementInQuickSearchScreenshot");
+			test.log(LogStatus.PASS, "The QuickSearch popup is verified"+test.addScreenCapture(hhonorsElementInQuickSearchScreenshot));
+			icjApplicationRepository.getHHonorsElementInQuickSearch(webDriver).click();
+			icjApplicationRepository.getHHonorsElementInQuickSearch(webDriver).sendKeys(testData.gethHonorsNumber());
+			Anesthesia.sleep(1);
+		}else{
+			String hhonorsElementInQuickSearchVerifyFailedScreenshot = GetScreenShot.capture(webDriver, "hhonorsElementInQuickSearchVerifyFailedScreenshot");
+			test.log(LogStatus.PASS, "The QuickSearch popup is not verified"+test.addScreenCapture(hhonorsElementInQuickSearchVerifyFailedScreenshot));
+		}*/
 		
 //	
 //		To Do 
@@ -184,9 +202,12 @@ public class ICJQuickSearch extends base{
 		}
 */
 		
+		
+		Highlighter.verifyElement(icjApplicationRepository.getUserNavigationArea(webDriver),webDriver);
 		icjApplicationRepository.getUserNavigationArea(webDriver).click();
 		Anesthesia.sleep(1);
 		
+		Highlighter.verifyElement(icjApplicationRepository.getLogoutLink(webDriver),webDriver);
 		icjApplicationRepository.getLogoutLink(webDriver).click();
 		Anesthesia.sleep(2);
 		

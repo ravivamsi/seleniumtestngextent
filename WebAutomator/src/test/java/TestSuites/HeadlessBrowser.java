@@ -21,6 +21,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Configuration.PathConfiguration;
+import Utilities.GetScreenShot;
 import resources.base;
 
 /**
@@ -46,7 +47,7 @@ public void init() throws IOException{
 	extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 }
 
-@Test(enabled=true)
+@Test(enabled=false)
 public void testHeadlessBrowser(){
 	
 	System.setProperty("phantomjs.binary.path", pathConfig.getPhanthomDriver());

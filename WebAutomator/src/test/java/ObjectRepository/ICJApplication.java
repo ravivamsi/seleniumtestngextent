@@ -44,6 +44,10 @@ public class ICJApplication {
 		return webDriver.findElement(By.linkText("Logout"));
 	}
 	
+	public WebElement getSearchInQuickSearch(WebDriver webDriver){
+		return webDriver.findElement(By.xpath("/html/body/div[1]/ul/li[1]/a"));
+	}
+	
 	public WebElement getHHonorsElementInQuickSearch(WebDriver webDriver){
 		return webDriver.findElement(By.id("searchHonors"));
 	}

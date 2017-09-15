@@ -23,6 +23,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Configuration.PathConfiguration;
+import Utilities.GetScreenShot;
 import resources.base;
 
 /**
@@ -48,9 +49,6 @@ public class LobbyLoginOnQPortfolio extends base{
 //		extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 	
 	}
-
-
-	
 
 	@Test(enabled=false)
 	public void verifyLobbyLoginGotoMyApplicationsAndTMTP() throws AWTException, IOException, InterruptedException{
@@ -112,13 +110,6 @@ public class LobbyLoginOnQPortfolio extends base{
 		
 		WebElement tmtpLink = webDriver.findElement(By.xpath(".//*[@id='myAppsAll']/div[28]/a"));
 		tmtpLink.click();
-		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-		
-		
-		
-		
-		
-		
 		
 		webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		

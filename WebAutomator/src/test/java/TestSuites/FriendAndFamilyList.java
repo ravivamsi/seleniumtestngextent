@@ -26,6 +26,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Configuration.PathConfiguration;
 import Utilities.Anesthesia;
+import Utilities.GetScreenShot;
 import resources.base;
 
 /**

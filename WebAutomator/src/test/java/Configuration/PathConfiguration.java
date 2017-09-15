@@ -33,9 +33,11 @@ public class PathConfiguration {
 	 
 		public String dataProprties = baseDirectory+"src\\main\\java\\resources\\data.properties";
 		
-		public String chromeDriver	= baseDirectory+"drivers\\chromedriver";
+		public String chromeDriver	= baseDirectory+"drivers\\chromedriver.exe";
 		
-		public  String geckoDriver = baseDirectory+"drivers\\geckodriver";
+		public String phanthomDriver = baseDirectory+"drivers\\phantomjs.exe";
+		
+		public  String geckoDriver = baseDirectory+"drivers\\geckodriver.exe";
 		
 		public String errorConfiguration = baseDirectory+"ErrorScreenshot\\";	
 		
