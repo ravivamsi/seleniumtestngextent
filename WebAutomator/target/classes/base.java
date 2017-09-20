@@ -43,10 +43,10 @@ if(browserName.equals("chrome"))
 	
 }else if (browserName.equals("firefox")){
 	
+	
+	System.setProperty("webdriver.gecko.driver", pathConfig.getGeckoDriver());
 	driver= new FirefoxDriver();
 	//firefox code
-	 driver.manage().window().maximize();
-	 
 	 
 }else if (browserName.equals("ie")){
 //	IE code
@@ -59,7 +59,6 @@ if(browserName.equals("chrome"))
 	driver = new PhantomJSDriver();
 }
 
-driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 return driver;
 
 

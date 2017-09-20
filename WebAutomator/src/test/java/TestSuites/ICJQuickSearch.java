@@ -55,12 +55,12 @@ public class ICJQuickSearch extends base{
 	}
 	
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void icjApplicationLoginAndVerifyQuickSearch() throws AWTException, IOException, InterruptedException{
 		
 		webDriver =initializeDriver();
 
-		webDriver.manage().window().maximize();
+//		webDriver.manage().window().maximize();
 		
 		test = extentReports.startTest("ICJ Quick Search");
 		
@@ -71,6 +71,7 @@ public class ICJQuickSearch extends base{
 		
 		//User ID 
 		Highlighter.verifyElement(icjApplicationRepository.getUserId(webDriver),webDriver);
+		icjApplicationRepository.getUserId(webDriver).clear();
 		icjApplicationRepository.getUserId(webDriver).sendKeys(testData.getLoginUsername());
 		Anesthesia.sleep(1);
 		test.log(LogStatus.PASS, "The User ID Element is verified");
@@ -78,6 +79,8 @@ public class ICJQuickSearch extends base{
 		// Password 
 		Highlighter.verifyElement(icjApplicationRepository.getPasswordElement(webDriver),webDriver);
 		icjApplicationRepository.getPasswordElement(webDriver).click();
+		icjApplicationRepository.getPasswordElement(webDriver).clear();
+		Anesthesia.sleep(1);
 		icjApplicationRepository.getPasswordElement(webDriver).sendKeys(testData.getLoginPassword());
 		Anesthesia.sleep(1);
 		test.log(LogStatus.PASS, "The Password Element is verified");
