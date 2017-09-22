@@ -12,7 +12,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
@@ -42,9 +41,7 @@ if(browserName.equals("chrome"))
 		//execute in chrome driver
 	
 }else if (browserName.equals("firefox")){
-	
-	
-	System.setProperty("webdriver.gecko.driver", pathConfig.getGeckoDriver());
+
 	driver= new FirefoxDriver();
 	//firefox code
 	 
@@ -57,6 +54,8 @@ if(browserName.equals("chrome"))
 	// Initialize the Headless Browser
 	System.setProperty("phantomjs.binary.path", pathConfig.getPhanthomDriver());
 	driver = new PhantomJSDriver();
+}else if(browserName.equalsIgnoreCase("mozilla47versionplus")){
+	System.setProperty("webdriver.gecko.driver", pathConfig.getGeckoDriver());
 }
 
 return driver;

@@ -3,6 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+      <class name="TestSuites.TMTPSmoke">
+        <methods>
+          <include name="smokeTestSuiteTMTPUnRegisteredUser"/>
+          <include name="endReport"/>
+          <include name="getResult"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- TestSuites.TMTPSmoke -->
       <class name="TestSuites.ICJQuickSearch">
         <methods>
           <include name="endReport"/>

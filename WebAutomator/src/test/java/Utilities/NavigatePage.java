@@ -18,7 +18,7 @@ public class NavigatePage {
 	}
 
 	public static void navigateBackword(WebDriver webDriver){
-		webDriver.navigate().forward();
+		webDriver.navigate().back();
 	}
 	
 	public static void navigateToUrlString(WebDriver webDriver, String url){

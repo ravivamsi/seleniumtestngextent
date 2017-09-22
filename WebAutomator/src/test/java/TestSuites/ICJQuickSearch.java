@@ -55,7 +55,7 @@ public class ICJQuickSearch extends base{
 	}
 	
 	
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void icjApplicationLoginAndVerifyQuickSearch() throws AWTException, IOException, InterruptedException{
 		
 		webDriver =initializeDriver();

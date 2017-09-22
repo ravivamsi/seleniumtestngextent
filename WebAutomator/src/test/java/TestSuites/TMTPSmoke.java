@@ -50,15 +50,17 @@ public class TMTPSmoke extends base{
 	public void init() throws IOException{
 		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"TMTPSmokeTestReport.html");
 //		extentReports.loadConfig(new File("/Users/vamsiravi/git/seleniumtestngextent/WebAutomator/extent.config")); 
+		
+		
+	}
+
+	@Test(enabled=false)
+	public void smokeTestSuiteTMTPRegisteredUser() throws AWTException, IOException, InterruptedException{
+
 		webDriver =initializeDriver();
 
 		webDriver.manage().window().maximize();
 		
-	}
-
-	@Test(enabled=true)
-	public void smokeTestSuiteTMTPRegisteredUser() throws AWTException, IOException, InterruptedException{
-
 		test = extentReports.startTest("TMTP Smoke Test Registered User");
 		
 		
