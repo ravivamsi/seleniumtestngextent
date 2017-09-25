@@ -11,14 +11,6 @@
           <include name="init"/>
         </methods>
       </class> <!-- TestSuites.TMTPSmoke -->
-      <class name="TestSuites.ICJQuickSearch">
-        <methods>
-          <include name="endReport"/>
-          <include name="getResult"/>
-          <include name="init"/>
-          <include name="icjApplicationLoginAndVerifyQuickSearch"/>
-        </methods>
-      </class> <!-- TestSuites.ICJQuickSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

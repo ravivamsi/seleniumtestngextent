@@ -50,7 +50,10 @@ public class ICJQuickSearch extends base{
 	
 	@BeforeTest
 	public void init() throws IOException{
-		extentReports = new ExtentReports(pathConfig.getReportsDirectory()+"ICJQuickSearchReport.html");
+		String extentReportPath = pathConfig.getReportsDirectory()+this.getClass().getName().toString()+"/";
+		System.out.println("The report for this will be generated in the path: "+extentReportPath);
+		
+		extentReports = new ExtentReports(extentReportPath+"ICJQuickSearchReport.html");
 		extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 	}
 	

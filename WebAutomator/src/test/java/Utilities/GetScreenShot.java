@@ -32,5 +32,16 @@ public class GetScreenShot {
 		FileUtils.copyFile(source, permanentDestination);
 		return destination;
 	}
+	
+	public static String capture(WebDriver webDrvier, String screenshotName, String screenshotPath) throws IOException{
+		
+		TakesScreenshot takeScreenshot = (TakesScreenshot)webDrvier;
+		File source = takeScreenshot.getScreenshotAs(OutputType.FILE);
+		String destination = screenshotPath+screenshotName+".png";
+		
+		File permanentDestination = new File(destination);
+		FileUtils.copyFile(source, permanentDestination);
+		return destination;
+	}
 
 }
