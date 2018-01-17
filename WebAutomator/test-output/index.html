@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,24 +102,15 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuites.ICJQuickSearch" hash-for-method="icjApplicationLoginAndVerifyQuickSearch">icjApplicationLoginAndVerifyQuickSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuites.TMTPSmoke" hash-for-method="smokeTestSuiteTMTPUnRegisteredUser">smokeTestSuiteTMTPUnRegisteredUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSuites.ICJQuickSearch" hash-for-method="icjApplicationLoginAndVerifyQuickSearch">icjApplicationLoginAndVerifyQuickSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -148,24 +139,24 @@
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -175,9 +166,9 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestSuites.ICJQuickSearch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -186,44 +177,96 @@
                   <a name="icjApplicationLoginAndVerifyQuickSearch">
                   </a> <!-- icjApplicationLoginAndVerifyQuickSearch -->
                   <span class="method-name">icjApplicationLoginAndVerifyQuickSearch</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;washq55226y6.hq.ad.hilton.com&apos;, ip: &apos;2601:3c2:8280:2b5b:0:0:0:946b&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b), userDataDir=/var/folders/c2/1cs59_ks15q_jmbjt_1c325m0000gn/T/.org.chromium.Chromium.Y12DCn}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=63.0.3239.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2ae430991d53076dac8ce156d5782e66
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:934)
+	at resources.base.initializeDriver(base.java:40)
+	at TestSuites.ICJQuickSearch.icjApplicationLoginAndVerifyQuickSearch(ICJQuickSearch.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.runSuites(TestNG.java:1028)
+	at org.testng.TestNG.run(TestNG.java:996)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/c2/1cs59_ks15q_jmbjt_1c325m0000gn/T/testng-eclipse--1886819917/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/c2/1cs59_ks15q_jmbjt_1c325m0000gn/T/testng-eclipse--1361859534/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;resources.ExtentReporterNG&quot;/&gt;
       &lt;class name=&quot;Utilities.CloseBrowser&quot;/&gt;
-      &lt;class name=&quot;pageObjects.LandingPage&quot;/&gt;
       &lt;class name=&quot;TestSuites.listeners&quot;/&gt;
       &lt;class name=&quot;TestData.Credentials&quot;/&gt;
+      &lt;class name=&quot;pageObjects.LandingPage&quot;/&gt;
       &lt;class name=&quot;TestSuites.RemoveMember&quot;/&gt;
+      &lt;class name=&quot;Utilities.Refresh&quot;/&gt;
       &lt;class name=&quot;ObjectRepository.TMTPApplication&quot;/&gt;
       &lt;class name=&quot;TestData.SendKeys&quot;/&gt;
-      &lt;class name=&quot;Utilities.Refresh&quot;/&gt;
       &lt;class name=&quot;Utilities.Frame&quot;/&gt;
       &lt;class name=&quot;TestSuites.Methods&quot;/&gt;
       &lt;class name=&quot;pageObjects.LoginPage&quot;/&gt;
       &lt;class name=&quot;Utilities.Highlighter&quot;/&gt;
-      &lt;class name=&quot;Utilities.NavigatePage&quot;/&gt;
-      &lt;class name=&quot;TestSuites.ICJQuickSearch&quot;/&gt;
       &lt;class name=&quot;TestData.ICJTestData&quot;/&gt;
+      &lt;class name=&quot;TestSuites.ICJQuickSearch&quot;/&gt;
+      &lt;class name=&quot;Utilities.NavigatePage&quot;/&gt;
       &lt;class name=&quot;Configuration.PathConfiguration&quot;/&gt;
-      &lt;class name=&quot;ObjectRepository.ICJApplication&quot;/&gt;
       &lt;class name=&quot;TestData.Environment&quot;/&gt;
+      &lt;class name=&quot;ObjectRepository.ICJApplication&quot;/&gt;
       &lt;class name=&quot;TestSuites.Register&quot;/&gt;
-      &lt;class name=&quot;TestSuites.HomePage&quot;/&gt;
       &lt;class name=&quot;Utilities.Anesthesia&quot;/&gt;
+      &lt;class name=&quot;TestSuites.HomePage&quot;/&gt;
       &lt;class name=&quot;Utilities.JavaScriptClicker&quot;/&gt;
       &lt;class name=&quot;TestSuites.FriendAndFamilyList&quot;/&gt;
       &lt;class name=&quot;Utilities.PageUtility&quot;/&gt;
@@ -290,16 +333,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'icjApplicationLoginAndVerifyQuickSearch')
 data.setCell(0, 2, 'TestSuites.ICJQuickSearch')
-data.setCell(0, 3, 73288);
+data.setCell(0, 3, 2394);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'smokeTestSuiteTMTPUnRegisteredUser')
 data.setCell(1, 2, 'TestSuites.TMTPSmoke')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 4);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -318,21 +361,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.Register</span>
+              <span class="ignored-class-name">TestSuites.AddMember</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tmtpJoin</span>
+                <span class="ignored-method-name">tmtpAddFriend</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.RemoveMember</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tmtpRemoveFriend</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.LobbyLoginOnQPortfolio</span>
+              <span class="ignored-class-name">TestSuites.FriendAndFamilyList</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyLobbyLoginGotoMyApplicationsAndTMTP</span>
                 <br/>
@@ -346,30 +382,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.VerifyElements</span>
+              <span class="ignored-class-name">TestSuites.LobbyLoginOnQPortfolio</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyUserInformation</span>
+                <span class="ignored-method-name">verifyLobbyLoginGotoMyApplicationsAndTMTP</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.VerifyLogout</span>
+              <span class="ignored-class-name">TestSuites.RemoveMember</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyLogoutInformation</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.AddRemoveMember</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyAddAndRemoveMember</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.AddMember</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tmtpAddFriend</span>
+                <span class="ignored-method-name">tmtpRemoveFriend</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -381,9 +403,23 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestSuites.FriendAndFamilyList</span>
+              <span class="ignored-class-name">TestSuites.AddRemoveMember</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyLobbyLoginGotoMyApplicationsAndTMTP</span>
+                <span class="ignored-method-name">verifyAddAndRemoveMember</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.Register</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tmtpJoin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.VerifyElements</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyUserInformation</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -391,6 +427,13 @@ return data;
               <span class="ignored-class-name">TestSuites.HeadlessBrowser</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testHeadlessBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestSuites.VerifyLogout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLogoutInformation</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -412,95 +455,99 @@ return data;
               <div class="chronological-class-name">TestSuites.AddRemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">5012 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.CaptureScreenshot</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">10020 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.FriendAndFamilyList</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">15032 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HeadlessBrowser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">20041 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">25051 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.ICJQuickSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">25051 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.LobbyLoginOnQPortfolio</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">30058 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.Register</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">35061 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.RemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">40068 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.TMTPSmoke</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">45077 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.VerifyElements</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">50086 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.VerifyLogout</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">55094 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.ICJQuickSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">icjApplicationLoginAndVerifyQuickSearch</span>
-                <span class="method-start">60111 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=icjApplicationLoginAndVerifyQuickSearch status=SUCCESS method=ICJQuickSearch.icjApp...)</span>
-                <span class="method-start">133401 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getResult([TestResult name=icjApplicationLoginAndVerifyQuickSearch status=FAILURE method=ICJQuickSearch.icjApp...)</span>
+                <span class="method-start">2446 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -509,83 +556,83 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">smokeTestSuiteTMTPUnRegisteredUser</span>
-                <span class="method-start">133407 ms</span>
+                <span class="method-start">2450 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getResult([TestResult name=smokeTestSuiteTMTPUnRegisteredUser status=FAILURE method=TMTPSmoke.smokeTestSuiteTM...)</span>
-                <span class="method-start">133411 ms</span>
+                <span class="method-start">2455 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.AddMember</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133415 ms</span>
+                <span class="method-start">2457 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.AddRemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133673 ms</span>
+                <span class="method-start">2677 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.CaptureScreenshot</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133711 ms</span>
+                <span class="method-start">2718 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.FriendAndFamilyList</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133759 ms</span>
+                <span class="method-start">2753 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HeadlessBrowser</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133792 ms</span>
+                <span class="method-start">2787 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">133819 ms</span>
+                <span class="method-start">2817 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.ICJQuickSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133847 ms</span>
+                <span class="method-start">2845 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.LobbyLoginOnQPortfolio</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133889 ms</span>
+                <span class="method-start">2873 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.Register</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133918 ms</span>
+                <span class="method-start">2908 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestSuites.RemoveMember</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">133953 ms</span>
+                <span class="method-start">2951 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -594,7 +641,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">endReport</span>
-                <span class="method-start">133980 ms</span>
+                <span class="method-start">2983 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

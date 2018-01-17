@@ -47,7 +47,7 @@ public void init() throws IOException{
 	extentReports.loadConfig(new File(pathConfig.getBaseDirectory()+"extent.config")); 
 }
 
-@Test(enabled=false)
+@Test(enabled=true)
 public void testHeadlessBrowser(){
 	
 	System.setProperty("phantomjs.binary.path", pathConfig.getPhanthomDriver());
